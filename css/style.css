@@ -132,7 +132,7 @@ h5{
     color: #fff;
     outline: 0;
   }
-  .third {
+  .third  {
     border-color: #3498db;
     color: #fff;
     box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
@@ -209,4 +209,18 @@ h5{
     font-family: 'roboto';
     font-size: 20px;
 }
-  
+.paciente{
+    font-family: 'roboto';
+    padding: 10px;
+    margin: 120px;
+    text-align: center;
+ }
+.dropdown-menu{
+    background-color:rgb(89, 165, 236) ;
+    
+}
+.dropdown-item{
+    font-family: 'roboto';
+    font-size: 20px;
+    color: white;
+}
