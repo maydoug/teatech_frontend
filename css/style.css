@@ -15,7 +15,6 @@ article{
     color: black;
     border: 1px solid rgb(6, 211, 247) ;
 }
-<<<<<<< HEAD
 
 .fundo-vermelho {
     background-color: #f1c6a9;
@@ -54,7 +53,8 @@ article{
 }
 .itens-canto{
     justify-content: flex-end;
-=======
+}
+
 .autismo{
    font-family: 'roboto';
    border: 5px double white;
@@ -92,5 +92,54 @@ h5{
 }
 .fig{
     width: 700px;
->>>>>>> da81c68f42fdc3e423c5782379c785fd773f3174
 }
+
+
+/* Início CSS rodapé */
+.rodape{
+    background-color: #e3f2fd;
+    color: #036ee7;
+}
+
+.rodape ul{
+    list-style-type: none;
+}
+.caixasuperior img{
+    width: 20px;
+    align-items: baseline;
+}
+
+.barrasuperior{
+   padding: 10px;
+   margin-left: 125px;
+   justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.125rem;
+}
+.barratripla{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.125rem;
+}
+.barrainferior{
+    padding: 5px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.125rem;
+}
+
+.caixainferior textarea{
+    resize: none ;
+    background-color: #e3f2fd;
+    color: #036ee7;
+}
+.caixadireita{
+    justify-content: center;
+}
+.caixadireita img{
+    width: 35px;
+}
+/* Fim do CSS rodapé */
