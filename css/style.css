@@ -1,3 +1,15 @@
 .mb-3{
     margin: 20px;
 }
+article{
+    display: flex;
+    margin-top: 30px;
+    padding: 10px;
+}
+.card{
+    margin-left: 15px;
+}
+.card a{
+    background:rgb(6, 211, 247);
+    color: black;
+}
