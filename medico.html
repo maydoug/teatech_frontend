@@ -27,7 +27,7 @@
         <nav>
           <nav class="navbar fixed-top navbar-expand-lg class="navbar navbar-dark " style="background-color: #e3f2fd;">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><strong>TEAtech</strong></a>
+              <a class="navbar-brand" href="index.html"><strong>TEAtech</strong></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navNoticias" aria-controls="navNoticias" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -38,7 +38,7 @@
                     <a class="nav-link active" aria-current="page" href="index.html">Início</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Cadastre-se</a>
+                    <a class="nav-link" href="participar.html">Cadastre-se</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="projeto.html">Projeto</a>
@@ -60,43 +60,58 @@
           </nav>
         </nav>
     </header>
-    <main class="autismo-main">
-         <div class="autismo">
-        <h2>Como Participar</h2>
-        <p>Profissionais das áreas de saúde, social e cultura se cadastram clicando, na tela inicial, em Cadastro – Profissional. 
-            Ali preenche seu cadastro deixando suas informações e serviços que pode oferecer.
-            Familiares dos portadores de TEA preenchem o formulário clicando, na tela inicial, em cadastro – Paciente. Descreve suas necessidades para, assim, encaminharmos cada família ao profissional responsável pela especialidade solicitada.</p>
+    <main>
+         <div class="paciente">
+        <h2>Cadastro do Médico:</h2>
         </div>
-        <div class="btn-center">
-        <button class="tea third">Profissional</button>
-        <button class="tea third">Paciente</button>
-        <button class="tea third">Colaborador</button>
+        <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite o seu nome..."></input>
+          </div>
+        <div class="form-group"> 
+          <label for="telefone">Telefone:</label>
+          <input class="form-control" type="text" name="telefone" id="telefone" placeholder="Digite um telefone para contato..."></input>
+          </div>
+         <div class="form group"> 
+          <label for="endereço">Endereço Comercial:</label>
+          <input class="form-control" type="text" name="endereco" id="endereco" placeholder="Digite o seu endereço..."></input>
+          </div>
+        <div class="form-group"> 
+          <label for="email">E-mail:</label>
+          <input class="form-control" type="text" name="email" id="email" placeholder="Digite o seu melhor email..."></input>
+          </div>
+          <div class="form-group"> 
+            <label for="atuacao">Campo de Atuação:</label>
+            <input class="form-control" type="text" name="atuacao" id="atuacao" placeholder=""></input>
+            </div>
+        <div class="form-group">
+          <label for="especializacao">Especialização:</label>
+          <textarea class="form-control" name="especializacao" id="especializacao" placeholder="Conte um pouco da sua Especialização"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="especializacao">CRM:</label>
+            <textarea class="form-control" name="especializacao" id="especializacao" placeholder="Conte um pouco da sua Especialização"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="especializacao">Experiências:</label>
+            <textarea class="form-control" name="especializacao" id="especializacao" placeholder="Conte um pouco da sua Especialização"></textarea>
+          </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary" >Enviar</button>
+        </div>
+      </div>
+        <div class="col-12 col-sm-6">
+          <img src="img/medico.jpeg" alt="quebra cabeça representando o autismo" width="300px">
+        </div>
+
+      </div>
+      </div>
     </div>
+        </div>
     </main>
-    <footer class="rodape">
-      <section class="barratripla">
-              <div class="caixaesquerda">
-          <ul>
-              <li class="nav-item"><a class="nav-link" href="index.html">Quem Somos</a></li>
-              <li class="nav-item"><a class="nav-link" href="artigo.html">Noticias</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
-          </ul>
-              </div>
-              <div class="caixacentral">
-          <ul>
-            <li class="nav-item"><a class="nav-link" href="#">Privacidade</a></li>
-            <li class="nav-item"><a class="nav-link" href="projeto.html">Projeto</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Avisos Legais</a></li>
-          </ul>
-              </div>
-              <div class="caixadireita">
-              <img src="img/facebook.jpeg" alt="logo do facebook">
-              <img src="img/instagram.jpeg" alt="logo do instagram">
-              <img src="img/twitter.jpeg" alt="logo do twitter">
-              <img src="img/youtube.jpeg" alt="logo do youtube">
-              </div>
-      </section>
-    </footer>
     <script src="/js/index.js"></script>
 </body>
 </html>
