@@ -22,61 +22,87 @@
     <!---Parallax-------------------------->
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 </head>
-<body class="autismo-art">
-<header>
-    <nav>
-        <nav class="navbar fixed-top navbar-expand-lg class="navbar navbar-dark " style="background-color: #e3f2fd;">
+<body class="autismo-part">
+    <header>
+        <nav>
+          <nav class="navbar fixed-top navbar-expand-lg class="navbar navbar-dark " style="background-color: #e3f2fd;">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><strong>TEAtech</strong></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navNoticias" aria-controls="navNoticias" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
         
-              <nav class="navbar fixed-top navbar-expand-lg class="navbar navbar-dark " style="background-color: #e3f2fd;">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#"><strong>TEAtech</strong></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navNoticias" aria-controls="navNoticias" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-            
-                  <div class="collapse navbar-collapse justify-content" id="navNoticias">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="participar.html">Cadastre-se</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="projeto.html">Projeto</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="artigo.html">+Notícias</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">Acesso</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown06">
-                          <li><a class="dropdown-item" href="#">Profissioais</a></li>
-                          <li><a class="dropdown-item" href="#">Pacientes</a></li>
-                        </ul>
-                      </li>
+              <div class="collapse navbar-collapse justify-content" id="navNoticias">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Cadastre-se</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="projeto.html">Projeto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="artigo.html">+Notícias</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">Acesso</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                      <li><a class="dropdown-item" href="#">Profissioais</a></li>
+                      <li><a class="dropdown-item" href="#">Pacientes</a></li>
                     </ul>
-                  </div>
-                </div>
-              </nav>
-    </nav>
-</header>
-      <div class="container">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </nav>
+    </header>
+    <main>
+         <div class="paciente">
+        <h2>Cadastro de Pacientes:</h2>
+        </div>
+        <div class="container">
         <div class="row">
-          <div class="col-6">
-            <h3>Cadastro de Pacientes:</h3>
+          <div class="col-12 col-sm-6">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite o seu nome..."></input>
           </div>
+        <div class="form-group"> 
+          <label for="telefone">Telefone:</label>
+          <input class="form-control" type="text" name="telefone" id="telefone" placeholder="Digite um telefone para contato..."></input>
+          </div>
+         <div class="form group"> 
+          <label for="endereço">Endereço:</label>
+          <input class="form-control" type="text" name="endereco" id="endereco" placeholder="Digite o seu endereço..."></input>
+          </div>
+        <div class="form-group"> 
+          <label for="email">E-mail:</label>
+          <input class="form-control" type="text" name="email" id="email" placeholder="Digite o seu melhor email..."></input>
+          </div>
+          <div class="form-group"> 
+            <label for="idade">Idade do paciênte:</label>
+            <input class="form-control" type="text" name="idade" id="idade" placeholder="Digite a idade do paciênte..."></input>
+            </div>
+        <div class="form-group">
+          <label for="mensagem">Principais sintomas:</label>
+          <textarea class="form-control" name="mensagem" id="mensagem" placeholder="Digite aqui os principais sintomas do paciênte..."></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary" >Enviar</button>
         </div>
       </div>
-     <footer>
+        <div class="col-12 col-sm-6">
+          <img src="./img/cad_paciente.jpg" alt="quebra cabeça representando o autismo" width="300px">
+        </div>
 
-  </footer>
-      
-  <script src="js/index.js"></script>
+      </div>
+      </div>
+    </div>
+        </div>
+    </main>
+    <script src="/js/index.js"></script>
 </body>
 </html>
