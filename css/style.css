@@ -3,6 +3,7 @@
 }
 article{
     display: flex;
+    justify-content: space-around;
     margin-top: 30px;
     padding: 10px;
 }
@@ -14,6 +15,7 @@ article{
     color: black;
     border: 1px solid rgb(6, 211, 247) ;
 }
+<<<<<<< HEAD
 
 .fundo-vermelho {
     background-color: #f1c6a9;
@@ -52,4 +54,43 @@ article{
 }
 .itens-canto{
     justify-content: flex-end;
+=======
+.autismo{
+   font-family: 'roboto';
+   border: 5px double white;
+   padding: 10px;
+   margin: 120px;
+   text-align: center;
+}
+.autismo h2{
+    font-size: 30px;
+    
+}
+.autismo p{
+    font-family:'roboto';
+    font-size: 20px;
+
+}
+
+.noticias{
+    margin: 100px;
+}
+.autismo-body{
+    background-color: #ADD8E6;
+}
+h5{
+    font-size: 40px;
+}
+.carousel-caption p{
+    font-size: 30px;
+}
+.card-title {
+    font-size: 20px;
+}
+.nav-link{
+    font-family: 'roboto';
+}
+.fig{
+    width: 700px;
+>>>>>>> da81c68f42fdc3e423c5782379c785fd773f3174
 }
