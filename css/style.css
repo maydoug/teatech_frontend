@@ -43,6 +43,13 @@ article{
 .grids-body{
     padding: 25px;
 }
+.grids-rodape{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+}
 .itens-canto{
     justify-content: flex-end;
 }
