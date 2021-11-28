@@ -157,3 +157,52 @@ h5{
   .autismo-art{
     background-color:rgb(245, 245, 0);
   }
+
+  /* Início CSS rodapé */
+.rodape{
+    background-color: #e3f2fd;
+    color: #036ee7;
+}
+
+.rodape ul{
+    list-style-type: none;
+}
+.caixasuperior img{
+    width: 20px;
+    align-items: baseline;
+}
+
+.barrasuperior{
+   padding: 10px;
+   margin-left: 125px;
+   justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.125rem;
+}
+.barratripla{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.125rem;
+}
+.barrainferior{
+    padding: 5px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.125rem;
+}
+
+.caixainferior textarea{
+    resize: none ;
+    background-color: #e3f2fd;
+    color: #036ee7;
+}
+.caixadireita{
+    justify-content: center;
+}
+.caixadireita img{
+    width: 35px;
+}
+/* Fim do CSS rodapé */
