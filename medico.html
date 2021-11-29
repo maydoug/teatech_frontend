@@ -29,7 +29,7 @@
     <nav>
       <nav class="navbar fixed-top navbar-expand-lg class="navbar navbar-dark " style="background-color: #e3f2fd;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><strong>TEAtech</strong></a>
+          <a href="index.html"><img src="./img/logo.png" alt="logo da TEAtech" width="125px"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navNoticias" aria-controls="navNoticias" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -57,86 +57,111 @@
                 </ul>
               </li>
             </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</nav>
+</header>
+<main class="pb-5">
+  <div class="paciente">
+    <h2>Acesso do Médico:</h2>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-6">
+        <div id="user-info">
+          <h2>Bem vindo, <span id="user-name"></span>!</h2>
+          <div class="mt-5">
+            <button type="button" id="signoff-button" class="btn btn-danger w-100" >Sair</button>
           </div>
         </div>
-      </nav>
-    </nav>
-  </header>
-  <main class="pb-5">
-    <div class="paciente">
-      <h2>Acesso do Médico:</h2>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-6">
-          <div id="user-info">
-            <h2>Bem vindo, <span id="user-name"></span>!</h2>
-            <div class="mt-5">
-              <button type="button" id="signoff-button" class="btn btn-danger w-100" >Sair</button>
+        <form id="signup-form">
+          <div class="form-group"> 
+            <label for="email">E-mail:</label>
+            <input class="form-control" type="text" name="email" id="email" placeholder="Email"></input>
+          </div>
+          <div class="form-group"> 
+            <label for="email">Senha:</label>
+            <input class="form-control" type="password" name="password" id="password" placeholder="Senha"></input>
+          </div>
+          
+          <div id="signin-section">
+            <hr>
+            
+            <div id="error-message-signin" class="text-danger"></div>
+            <div class="form-group mt-2">
+              <button type="submit" id="submit-button" class="btn btn-primary w-100" >Entrar</button>
+            </div>
+            <div class="form-group mt-2">
+              <button type="button" id="signup-button" class="btn btn-secondary w-100" >Cadastrar</button>
             </div>
           </div>
-          <form id="signup-form">
-            <div class="form-group"> 
-              <label for="email">E-mail:</label>
-              <input class="form-control" type="text" name="email" id="email" placeholder="Email"></input>
+          
+          <div id="signup-section">
+            <hr>
+            
+            <div class="form-group">
+              <label for="nome">Nome:</label>
+              <input class="form-control" type="text" name="name" id="name" placeholder="Nome"></input>
             </div>
             <div class="form-group"> 
-              <label for="email">Senha:</label>
-              <input class="form-control" type="password" name="password" id="password" placeholder="Senha"></input>
+              <label for="telefone">CPF:</label>
+              <input class="form-control" type="text" name="cpf" id="cpf" placeholder="000.000.000-00"></input>
             </div>
-
-            <div id="signin-section">
-              <hr>
-  
-              <div id="error-message-signin" class="text-danger"></div>
-              <div class="form-group mt-2">
-                <button type="submit" id="submit-button" class="btn btn-primary w-100" >Entrar</button>
-              </div>
-              <div class="form-group mt-2">
-                <button type="button" id="signup-button" class="btn btn-secondary w-100" >Cadastrar</button>
-              </div>
+            <div class="form group"> 
+              <label for="endereço">CRM:</label>
+              <input class="form-control" type="text" name="crm" id="crm" placeholder="000000"></input>
+            </div>
+            <div class="form group"> 
+              <label for="endereço">Especialidade:</label>
+              <input class="form-control" type="text" name="specialty" id="specialty" placeholder="Especialidade"></input>
             </div>
             
-            <div id="signup-section">
-              <hr>
-  
-              <div class="form-group">
-                <label for="nome">Nome:</label>
-                <input class="form-control" type="text" name="name" id="name" placeholder="Nome"></input>
-              </div>
-              <div class="form-group"> 
-                <label for="telefone">CPF:</label>
-                <input class="form-control" type="text" name="cpf" id="cpf" placeholder="000.000.000-00"></input>
-              </div>
-              <div class="form group"> 
-                <label for="endereço">CRM:</label>
-                <input class="form-control" type="text" name="crm" id="crm" placeholder="000000"></input>
-              </div>
-              <div class="form group"> 
-                <label for="endereço">Especialidade:</label>
-                <input class="form-control" type="text" name="specialty" id="specialty" placeholder="Especialidade"></input>
-              </div>
-  
-              <hr>
-  
-              <div id="error-message-signup" class="text-danger"></div>
-              <div class="form-group mt-2">
-                <button type="submit" id="submit-button" class="btn btn-primary w-100" >Cadastrar</button>
-              </div>
-              <div class="form-group mt-2">
-                <button type="button" id="signin-button" class="btn btn-secondary w-100" >Voltar</button>
-              </div>
+            <hr>
+            
+            <div id="error-message-signup" class="text-danger"></div>
+            <div class="form-group mt-2">
+              <button type="submit" id="submit-button" class="btn btn-primary w-100" >Cadastrar</button>
             </div>
-          </form>
-        </div>
-        <div class="col-12 col-sm-6">
-          <img src="img/medico.jpeg" alt="quebra cabeça representando o autismo" width="300px">
-        </div>
+            <div class="form-group mt-2">
+              <button type="button" id="signin-button" class="btn btn-secondary w-100" >Voltar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-12 col-sm-6">
+        <img src="img/medico.jpeg" alt="quebra cabeça representando o autismo" width="300px">
       </div>
     </div>
   </div>
-</div>
 </main>
+<footer class="rodape">
+  <section class="barratripla">
+    <div class="caixaesquerda">
+      <ul>
+        <li class="nav-item"><a class="nav-link" href="projeto.html">Quem Somos</a></li>
+        <li class="nav-item"><a class="nav-link" href="artigo.html">Noticias</a></li>
+        <li class="nav-item"><a class="nav-link" href="colaborador.html">Contato</a></li>
+      </ul>
+    </div>
+    <div class="caixacentral">
+      <ul>
+        <li class="nav-item"><a class="nav-link" href="participar.html">Cadastre-se</a></li>
+        <li class="nav-item"><a class="nav-link" href="projeto.html">Projeto</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Avisos Legais</a></li>
+      </ul>
+    </div>
+    <div class="caixadireita">
+      <img src="img/facebook.png" alt="logo do facebook">
+      <img src="img/instagram.png" alt="logo do instagram">
+      <img src="img/twitter.png" alt="logo do twitter">
+      <img src="img/youtube.png" alt="logo do youtube">
+    </div>
+  </section>
+</footer>
+<script src="/js/index.js"></script>
 <script src="./js/signup-professional.js"></script>
 </body>
 </html>
