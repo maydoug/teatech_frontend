@@ -4,7 +4,7 @@ $(document).ready(function() {
     $('#error-message-signup').hide();
     $('#signup-section').hide();
 
-    axios.defaults.baseURL = 'http://localhost:8080';
+    axios.defaults.baseURL = 'http://localhost:8080/patient';
     axios.defaults.headers.post['Content-Type'] = 'application/json;charset=utf-8';
     axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
 
@@ -12,9 +12,15 @@ $(document).ready(function() {
         'email',
         'password',
         'name',
+        'surname',
         'cpf',
-        'crm',
-        'specialty',
+        'dx',
+        'phone',
+        'weight',
+        'height',
+        'gender',
+        'allergies',
+        'meds',
     ];
 
     $('#signup-button').click((e) => showSignup());
@@ -50,11 +56,11 @@ const updatePage = () => {
 }
 
 const signin = (values) => {
-    return axios.post('/professional/signin', values).then(
+    return axios.post('/signin', values).then(
         res => {
-            const { name, crm, email, specialty, cpf } = res.data.existingProfessional;
+            const { email, name, surname, cpf, dx, phone, weight, height, gender, allergies, meds } = res.data.existingPatient;
             localStorage.setItem('accessToken', res.data.token);
-            localStorage.setItem('userInfo', JSON.stringify({ name, crm, email, specialty, cpf }));
+            localStorage.setItem('userInfo', JSON.stringify({ email, name, surname, cpf, dx, phone, weight, height, gender, allergies, meds }));
         }
     ).catch(
         () => updateErrorMessage('Não foi possível entrar com a credencial fornecida, por favor verifique os dados inseridos.'),
@@ -65,10 +71,10 @@ const signin = (values) => {
 }
 
 const signup = (values) => {
-    return axios.post('/professional', values).then(
+    return axios.post('', values).then(
         () => signin(values),
     ).catch(
-        () => updateErrorMessage('Não foi possível cadastrar o profissional, por favor verifique os dados enviados.'),
+        () => updateErrorMessage('Não foi possível cadastrar o paciente, por favor verifique os dados enviados.'),
     ).finally(() => {
         $('#submit-button').prop('disabled', false);
         updatePage();
