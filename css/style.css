@@ -53,6 +53,7 @@ h5{
 }
 .nav-link{
     font-family: 'roboto';
+    font-weight: 700;
 }
 .fig{
     width: 700px;
@@ -97,7 +98,7 @@ h5{
 }
 .lego{
     font-family: 'roboto';
-    font-weight: 600;
+    font-weight: 700;
 }
 .tea{
     box-sizing: border-box;
@@ -131,7 +132,7 @@ h5{
     color: #fff;
     outline: 0;
   }
-  .third {
+  .third  {
     border-color: #3498db;
     color: #fff;
     box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
@@ -157,9 +158,7 @@ h5{
   .autismo-art{
     background-color:rgb(245, 245, 0);
   }
-
-  /* Início CSS rodapé */
-.rodape{
+  .rodape{
     background-color: #e3f2fd;
     color: #036ee7;
 }
@@ -200,9 +199,28 @@ h5{
     color: #036ee7;
 }
 .caixadireita{
-    justify-content: center;
+    display:block;
 }
 .caixadireita img{
     width: 35px;
+    margin-left: 20px;
 }
-/* Fim do CSS rodapé */
+.nav-item{
+    font-family: 'roboto';
+    font-size: 20px;
+}
+.paciente{
+    font-family: 'roboto';
+    padding: 10px;
+    margin: 120px;
+    text-align: center;
+ }
+.dropdown-menu{
+    background-color:rgb(89, 165, 236) ;
+    
+}
+.dropdown-item{
+    font-family: 'roboto';
+    font-size: 20px;
+    color: white;
+}
